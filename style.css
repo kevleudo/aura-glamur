@@ -48,7 +48,7 @@ border-radius: 4px;
 .search-cart button {
 background: white;
 border: none;
-font-size: 18px;
+font-size: 18px; 
 color: #ff3399;
 cursor: pointer;  
 } 
