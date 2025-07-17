@@ -1,6 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
 body {
 margin: 0;
 font-family: 'Segoe UI', sans-serif;
+line-height: 2.0;
 }
 
 .navbar {
@@ -49,8 +61,8 @@ border-radius: 4px;
 background: white;
 border: none;
 font-size: 18px; 
-color: #ff3399;
-cursor: pointer;  
+color: #ac105e;
+cursor: help;  
 } 
 
 .search-cart span {
@@ -64,3 +76,25 @@ margin: 20px;
 font-weight: bold;
 color: #d10081;
 }
+.bienvenida-container {
+display: flex;
+flex-direction: row;
+text-align: center;
+align-items: center;
+
+}
+.flex-container{
+    display: inline-block;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+   }
