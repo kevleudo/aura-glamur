@@ -2,109 +2,121 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aura Glam</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura Glam</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Logo Aura Glam">
-        </div>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Logo Aura Glam" />
+    </div>
 
-        <ul class="nav-links">
-            <details class="menu-skincare">
-                <summary>SKINCARE</summary>
-                <ul>
-                    <li><a href="mascarillas.html">Mascarillas</a></li>
-                    <li><a href="jabones faciales.html">Jabones faciales</a></li>
-                    <li><a href="cremas hidratantes.html">Cremas hidratantes</a></li>
-                    <li><a href="bloqueador solar.html">Bloqueador</a></li>
-                    <li><a href="agua micelar.html">Agua micelar</a></li>
-                    <li><a href="toallitas desmaquillantes.html">Toallitas desmaquillantes</a></li>
-                </ul>
-            </details>
-            <details class="menu-maquillaje">
-                <summary>Maquillaje</summary>
-                <ul>
-                    <li><a href="base.html">Base</a></li>
-                    <li><a href="labiales.html">Labiales</a></li>
-                    <li><a href="sombras.html">Sombras</a></li>
-                    <li><a href="rubor.html">Rubor</a></li>
-                    <li><a href="delineador.html">Delineador</a></li>
-                </ul>
-            </details>
-
-            <details class="menu-cabello">
-                <summary>CABELLO</summary>
-                <ul>
-                    <li><a href="crema para peinar.html">Crema para peinar</a></li>
-                    <li><a href="acondicionador.html">Acondicionador</a></li>
-                    <li><a href="shampoo.html">Shampoo</a></li>
-                    <li><a href="tratamiento.html">Tratamiento</a></li>
-                    <li><a href="locion para el cabello.html">Loción para el cabello</a></li>
-                    <li><a href="aceite capilar.html">Aceite capilar</a></li>
-                    <li><a href="serum.html">Serum</a></li>
-                    <li><a href="cepillo definidor.html">Cepillo definidor</a></li>
-                </ul>
-            </details>
+    <ul class="nav-links">
+      <details class="menu-skincare">
+        <summary>SKINCARE</summary>
+        <ul>
+          <li><a href="mascarillas.html">Mascarillas</a></li>
+          <li><a href="jabones faciales.html">Jabones faciales</a></li>
+          <li><a href="cremas hidratantes.html">Cremas hidratantes</a></li>
+          <li><a href="bloqueador solar.html">Bloqueador</a></li>
+          <li><a href="agua micelar.html">Agua micelar</a></li>
+          <li><a href="toallitas desmaquillantes.html">Toallitas desmaquillantes</a></li>
         </ul>
+      </details>
+      <details class="menu-maquillaje">
+        <summary>Maquillaje</summary>
+        <ul>
+          <li><a href="base.html">Base</a></li>
+          <li><a href="labiales.html">Labiales</a></li>
+          <li><a href="sombras.html">Sombras</a></li>
+          <li><a href="rubor.html">Rubor</a></li>
+          <li><a href="delineador.html">Delineador</a></li>
+        </ul>
+      </details>
+      <details class="menu-cabello">
+        <summary>CABELLO</summary>
+        <ul>
+          <li><a href="crema para peinar.html">Crema para peinar</a></li>
+          <li><a href="acondicionador.html">Acondicionador</a></li>
+          <li><a href="shampoo.html">Shampoo</a></li>
+          <li><a href="tratamiento.html">Tratamiento</a></li>
+          <li><a href="locion para el cabello.html">Loción para el cabello</a></li>
+          <li><a href="aceite capilar.html">Aceite capilar</a></li>
+          <li><a href="serum.html">Serum</a></li>
+          <li><a href="cepillo definidor.html">Cepillo definidor</a></li>
+        </ul>
+      </details>
+    </ul>
 
-        <div class="search-cart">
-            <input type="text" id="searchInput" placeholder="Buscar...">
-            <button onclick="buscarProducto()">🔍</button>
-            <span>🤍</span>
-            <span>🛒<sup>0</sup></span>
+    <div class="search-cart">
+      <input type="text" id="searchInput" placeholder="Buscar..." />
+      <button onclick="buscarProducto()">🔍</button>
+      <span>🤍</span>
+      <span>🛒<sup>0</sup></span>
+    </div>
+  </nav>
+
+  <div id="resultado" class="resultado"></div>
+
+  <section>
+    <div class="bienvenida-container">
+      <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Imagen bienvenida" />
+    </div>
+  </section>
+
+  <section id="bienvenida">
+    <div class="flex-container">
+      <div class="item">✨ Bienvenidos a <strong>Aura Glam</strong></div>
+      <div class="item">Un espacio donde tu esencia brilla y cada detalle está pensado para realzar tu luz.</div>
+      <div class="item">Inspírate, sueña y déjate envolver por la magia de Glam 💫</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="flex-container">
+      <div class="container">
+        <h2><i class="fas fa-star"></i> Categorías destacadas</h2>
+        <div class="productos">
+          <div class="product-maquillaje">
+            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 1" />
+            <h3>Producto 1</h3>
+            <p>Descripción breve del producto.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <div class="product-skincare">
+            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 2" />
+            <h3>Producto 2</h3>
+            <p>Descripción breve del producto.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <div class="product-cabello">
+            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 3" />
+            <h3>Producto 3</h3>
+            <p>Descripción breve del producto.</p>
+            <button>Agregar al carrito</button>
+          </div>
         </div>
-    </nav>
-    
-    <div id="resultado" class="resultado"></div>
+      </div>
+    </div>
+  </section>
 
-    <section>
-        <div class="bienvenida-container">
-            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Imagen bienvenida" width="100%" height="700px">
-        </div>
-    </section>
+  <!-- Botón WhatsApp flotante -->
+  <a class="whatsapp-btn" href="https://wa.me/573001234567" target="_blank" title="Chatea con nosotros">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-    <br><br><br><br><br><br>
-
-    <section id="bienvenida">
-        <div class="flex-container">
-            <div class="item">Bienvenidos a Aura Glam</div>
-            <div class="item">Un espacio donde tu esencia brilla y cada detalle está pensado para realzar tu luz.</div>
-            <div class="item">Inspírate, sueña y déjate envolver por la magia de Glam.</div>
-        </div>
-    </section>
-
-    <section>
-        <div class="flex-container">
-            <div class="container">
-                <h2>Categorías</h2>
-                <div class="productos">
-                    <div class="product-maquillaje">
-                        <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 1" width="50%">
-                        <h3>Producto 1</h3>
-                        <p>Descripción breve del producto.</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                    <div class="product-skincare">
-                        <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 2" width="50%">
-                        <h3>Producto 2</h3>
-                        <p>Descripción breve del producto.</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                    <div class="product-cabello">
-                        <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 3" width="50%">
-                        <h3>Producto 3</h3>
-                        <p>Descripción breve del producto.</p>
-                        <button>Agregar al carrito</button>
-                    </div>
-                    <!-- Puedes agregar más productos aquí -->
-                </div>
-            </div>
-        </div>
-    </section>
-
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Aura Glam. Todos los derechos reservados. | Diseñado con 💖 para realzar tu belleza.
+  </footer>
 </body>
+</html>
