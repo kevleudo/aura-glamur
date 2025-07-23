@@ -6,65 +6,62 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  line-height: 1.8;
-  background-color: #fff0f5;
+  background-color: #fff;
   color: #333;
-  animation: fadeIn 1s ease-in;
+  line-height: 1.6;
+  padding: 0 20px;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* Navbar */
+/* ========== NAVBAR ========== */
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, #f5b3cd, #f8bde8);
-  padding: 15px 30px;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to right, #f6eaf5, #fdeef3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
-  gap: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-  width: 60px;
   height: 60px;
-  border-radius: 50%;
 }
 
 .nav-links {
-  display: flex;
-  gap: 30px;
   list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  position: relative;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: #4a004e;
-  font-weight: 600;
-  transition: color 0.3s ease;
+  color: #b03e80;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #d10081;
-}
-
-details summary {
-  cursor: pointer;
-  font-weight: bold;
-  color: #3a003a;
+  color: #e73399;
 }
 
 details ul {
-  padding-left: 15px;
+  background-color: #fff0fa;
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 99;
 }
 
-details li {
-  list-style: none;
-  margin: 4px 0;
+details ul li {
+  margin: 5px 0;
 }
 
 .search-cart {
@@ -74,148 +71,265 @@ details li {
 }
 
 .search-cart input {
-  padding: 6px 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 6px;
 }
 
 .search-cart button {
-  background: white;
+  background-color: #e73399;
+  color: #fff;
   border: none;
-  font-size: 18px;
-  color: #ac105e;
+  padding: 6px 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.search-cart span {
+.search-cart i {
   font-size: 20px;
-  color: #ac105e;
-  cursor: pointer;
+  color: #b03e80;
 }
 
-/* Resultado de búsqueda */
-.resultado {
-  margin: 20px;
-  font-weight: bold;
-  color: #d10081;
+/* ========== SECCIONES GENERALES ========== */
+section {
+  margin: 50px 0;
 }
 
-/* Bienvenida */
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #b03e80;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ========== BIENVENIDA ========== */
 .bienvenida-container img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
 
-#bienvenida .flex-container {
-  flex-direction: column;
+.flex-container .item {
+  font-size: 24px;
   text-align: center;
-  padding: 40px 20px;
+  color: #b03e80;
+  padding: 20px;
+}
+
+/* ========== PRODUCTOS ========== */
+/* skincare*/
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px 10px;
   background-color: #fff;
 }
 
-#bienvenida .item {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #5e005e;
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
 }
 
-/* Productos */
-.container {
-  padding: 40px;
-  text-align: center;
+.search-box i {
+  color: #b03e80;
+  font-size: 16px;
+  margin-left: 5px;
 }
-
-.container h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #8c007a;
-}
-
-.productos {
+/* cabello*/
+.search-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px 10px;
+  background-color: #fff;
 }
 
-.product-maquillaje,
-.product-skincare,
-.product-cabello {
-  background-color: #ffe4f2;
-  border-radius: 15px;
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.search-box i {
+  color: #b03e80;
+  font-size: 16px;
+  margin-left: 5px;
+}
+/**/
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.producto {
+  background-color: #fff0fa;
   padding: 20px;
-  width: 280px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.3s;
 }
 
-.product-maquillaje:hover,
-.product-skincare:hover,
-.product-cabello:hover {
+.producto:hover {
   transform: translateY(-5px);
 }
 
-.productos img {
-  width: 60%;
+.producto img {
+  width: 100%;
+  height: auto;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.productos h3 {
-  margin-top: 15px;
-  font-size: 1.3rem;
-  color: #80004d;
+.producto h3 {
+  color: #b03e80;
+  font-size: 20px;
+  margin: 10px 0 5px;
 }
 
-.productos p {
-  font-size: 0.95rem;
-  color: #333;
-  margin: 10px 0;
-  text-align: justify;
+.producto p {
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
-.productos button {
-  background-color: #e91e63;
+.precio {
+  font-weight: bold;
+  color: #e73399;
+  margin: 5px 0 15px;
+}
+
+.producto button {
+  background-color: #b03e80;
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 25px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
 }
 
-.productos button:hover {
-  background-color: #c2185b;
+.producto button:hover {
+  background-color: #e73399;
 }
 
-/* Botón WhatsApp */
+/* ========== SERVICIOS ========== */
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.servicio {
+  background-color: #fbe8f4;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.servicio i {
+  font-size: 40px;
+  color: #e73399;
+  margin-bottom: 10px;
+}
+
+.servicio h3 {
+  color: #b03e80;
+  margin-bottom: 8px;
+}
+
+/* ========== BLOG ========== */
+.blog-section .blog-entrada {
+  background-color: #fff0fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ========== TESTIMONIOS ========== */
+.testimonios-section .testimonio {
+  background-color: #fdeaf3;
+  padding: 15px 20px;
+  border-left: 5px solid #e73399;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.testimonio span {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #b03e80;
+}
+
+/* ========== FORMULARIO ========== */
+.suscripcion-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.suscripcion-section input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 300px;
+  max-width: 90%;
+}
+
+.suscripcion-section button {
+  background-color: #b03e80;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* ========== REDES ========== */
+.social-section a {
+  color: #b03e80;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.social-section a:hover {
+  text-decoration: underline;
+}
+
+/* ========== WHATSAPP ========== */
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
+  background-color: #25D366;
   color: white;
-  border-radius: 50%;
-  padding: 15px;
   font-size: 24px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 50%;
   z-index: 999;
-  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.whatsapp-btn:hover {
-  background-color: #1ebc57;
-}
-
-/* Footer */
+/* ========== FOOTER ========== */
 footer {
-  background: linear-gradient(to right, #f9c5d1, #fccb90);
-  padding: 20px;
   text-align: center;
-  color: #333;
-  font-size: 0.9em;
-  margin-top: 40px;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #777;
 }

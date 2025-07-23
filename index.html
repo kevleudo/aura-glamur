@@ -1,122 +1,200 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura Glam</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6f91b.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <nav class="navbar">
+
+  <header class="navbar">
     <div class="logo">
-      <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Logo Aura Glam" />
+      <img src="img/logo.png" alt="Aura Glam Logo">
     </div>
-
     <ul class="nav-links">
-      <details class="menu-skincare">
-        <summary>SKINCARE</summary>
-        <ul>
-          <li><a href="mascarillas.html">Mascarillas</a></li>
-          <li><a href="jabones faciales.html">Jabones faciales</a></li>
-          <li><a href="cremas hidratantes.html">Cremas hidratantes</a></li>
-          <li><a href="bloqueador solar.html">Bloqueador</a></li>
-          <li><a href="agua micelar.html">Agua micelar</a></li>
-          <li><a href="toallitas desmaquillantes.html">Toallitas desmaquillantes</a></li>
-        </ul>
-      </details>
-      <details class="menu-maquillaje">
-        <summary>Maquillaje</summary>
-        <ul>
-          <li><a href="base.html">Base</a></li>
-          <li><a href="labiales.html">Labiales</a></li>
-          <li><a href="sombras.html">Sombras</a></li>
-          <li><a href="rubor.html">Rubor</a></li>
-          <li><a href="delineador.html">Delineador</a></li>
-        </ul>
-      </details>
-      <details class="menu-cabello">
-        <summary>CABELLO</summary>
-        <ul>
-          <li><a href="crema para peinar.html">Crema para peinar</a></li>
-          <li><a href="acondicionador.html">Acondicionador</a></li>
-          <li><a href="shampoo.html">Shampoo</a></li>
-          <li><a href="tratamiento.html">Tratamiento</a></li>
-          <li><a href="locion para el cabello.html">Loción para el cabello</a></li>
-          <li><a href="aceite capilar.html">Aceite capilar</a></li>
-          <li><a href="serum.html">Serum</a></li>
-          <li><a href="cepillo definidor.html">Cepillo definidor</a></li>
-        </ul>
-      </details>
+      <li><a href="#bienvenida">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li>
+        <details>
+          <summary>Categorías</summary>
+          <ul>
+            <li><a href="maquillaje.html">Maquillaje</a></li>
+            <li><a href="skincare.html">Skincare</a></li>
+            <li><a href="cabello.html">Cabello</a></li>
+          </ul>
+        </details>
+      </li>
     </ul>
-
     <div class="search-cart">
-      <input type="text" id="searchInput" placeholder="Buscar..." />
-      <button onclick="buscarProducto()">🔍</button>
-      <span>🤍</span>
-      <span>🛒<sup>0</sup></span>
+      <input type="text" placeholder="Buscar...">
+      <button><i class="fas fa-search"></i></button>
+      <span><i class="fas fa-shopping-cart"></i></span>
     </div>
-  </nav>
+  </header>
 
-  <div id="resultado" class="resultado"></div>
-
-  <section>
-    <div class="bienvenida-container">
-      <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Imagen bienvenida" />
+  <section id="bienvenida" class="bienvenida-container">
+    <img src="img/banner.jpg" alt="Bienvenida">
+    <div class="flex-container">
+      <div class="item">Bienvenidos a Aura Glam – Donde la belleza encuentra su esencia</div>
     </div>
   </section>
 
-  <section id="bienvenida">
-    <div class="flex-container">
-      <div class="item">✨ Bienvenidos a <strong>Aura Glam</strong></div>
-      <div class="item">Un espacio donde tu esencia brilla y cada detalle está pensado para realzar tu luz.</div>
-      <div class="item">Inspírate, sueña y déjate envolver por la magia de Glam 💫</div>
-    </div>
-  </section>
-
-  <section>
-    <div class="flex-container">
-      <div class="container">
-        <h2><i class="fas fa-star"></i> Categorías destacadas</h2>
-        <div class="productos">
-          <div class="product-maquillaje">
-            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 1" />
-            <h3>Producto 1</h3>
-            <p>Descripción breve del producto.</p>
-            <button>Agregar al carrito</button>
-          </div>
-          <div class="product-skincare">
-            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 2" />
-            <h3>Producto 2</h3>
-            <p>Descripción breve del producto.</p>
-            <button>Agregar al carrito</button>
-          </div>
-          <div class="product-cabello">
-            <img src="ChatGPT Image 7 jul 2025, 15_41_02.png" alt="Producto 3" />
-            <h3>Producto 3</h3>
-            <p>Descripción breve del producto.</p>
-            <button>Agregar al carrito</button>
-          </div>
-        </div>
+  <section id="productos" class="container">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/labial.jpg" alt="Labial Mate">
+        <h3>Labial Mate</h3>
+        <p>Colores intensos y duraderos para un look impactante todo el día.</p>
+        <p class="precio">$18.000 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/paleta.jpg" alt="Paleta de Sombras">
+        <h3>Paleta de Sombras</h3>
+        <p>12 tonos vibrantes para crear looks de día y noche.</p>
+        <p class="precio">$42.000 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/serum.jpg" alt="Serum Facial">
+        <h3>Serum Facial</h3>
+        <p>Hidratación profunda con ingredientes naturales para una piel radiante.</p>
+        <p class="precio">$39.000 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/mascarilla.jpg" alt="Mascarilla Purificante">
+        <h3>Mascarilla Purificante</h3>
+        <p>Elimina impurezas y deja tu piel suave como seda.</p>
+        <p class="precio">$25.000 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/shampoo.jpg" alt="Shampoo Nutritivo">
+        <h3>Shampoo Nutritivo</h3>
+        <p>Repara y fortalece tu cabello desde la raíz hasta las puntas.</p>
+        <p class="precio">$29.500 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/mascarilla-capilar.jpg" alt="Mascarilla Capilar">
+        <h3>Mascarilla Capilar</h3>
+        <p>Nutrición intensiva para cabello seco o dañado.</p>
+        <p class="precio">$34.000 COP</p>
+        <button>Agregar al carrito</button>
       </div>
     </div>
   </section>
 
-  <!-- Botón WhatsApp flotante -->
-  <a class="whatsapp-btn" href="https://wa.me/573001234567" target="_blank" title="Chatea con nosotros">
+  <section id="ofertas" class="container">
+    <h2>Ofertas Especiales</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/labial-oferta.jpg" alt="Dúo Labiales">
+        <h3>Dúo de Labiales</h3>
+        <p>Dos tonos intensos al precio de uno. ¡Solo por tiempo limitado!</p>
+        <p class="precio">$22.000 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="img/kit-skincare.jpg" alt="Kit Skincare Diario">
+        <h3>Kit Skincare Diario</h3>
+        <p>Limpieza, hidratación y protección en un solo paquete.</p>
+        <p class="precio">$55.000 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="novedades" class="container">
+    <h2>Novedades Recientes</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/nueva-paleta.jpg" alt="Paleta edición limitada">
+        <h3>Paleta Glam Edición Limitada</h3>
+        <p>Colores exclusivos para esta temporada. ¡No te la pierdas!</p>
+        <p class="precio">$48.000 COP</p>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="container">
+    <h2>Servicios de Belleza</h2>
+    <div class="servicios">
+      <div class="servicio">
+        <i class="fas fa-air-freshener"></i>
+        <h3>Asesoría Personalizada</h3>
+        <p>Te ayudamos a elegir los productos ideales para tu tipo de piel y estilo.</p>
+      </div>
+      <div class="servicio">
+        <i class="fas fa-magic"></i>
+        <h3>Maquillaje Profesional</h3>
+        <p>Agenda tu cita para eventos especiales con nuestros maquilladores expertos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="blog-section">
+    <h2>Blog de Belleza</h2>
+    <div class="blog-entrada">
+      <h3>5 pasos para un maquillaje natural</h3>
+      <p>Descubre cómo lograr un look fresco y radiante en menos de 10 minutos.</p>
+    </div>
+    <div class="blog-entrada">
+      <h3>Rutina de skincare para piel mixta</h3>
+      <p>Guía completa para cuidar y equilibrar tu piel día a día.</p>
+    </div>
+    <div class="blog-entrada">
+      <h3>Errores comunes al lavar tu cabello</h3>
+      <p>Evita estos hábitos y mejora la salud de tu melena.</p>
+    </div>
+    <div class="blog-entrada">
+      <h3>Trucos para que tu labial dure más</h3>
+      <p>Desde exfoliar hasta sellar, conoce los secretos para labios perfectos todo el día.</p>
+    </div>
+  </section>
+
+  <section id="testimonios" class="testimonios-section">
+    <h2>Lo que dicen nuestras clientas</h2>
+    <div class="testimonio">"Los productos son increíbles! Mi piel nunca se sintió tan suave y luminosa." <span>- Camila R.</span></div>
+    <div class="testimonio">"Recomiendo Aura Glam a todas mis amigas. ¡Servicio rápido y productos de calidad!" <span>- Laura M.</span></div>
+    <div class="testimonio">"La paleta de sombras me encantó. Colores intensos que duran todo el día." <span>- Daniela G.</span></div>
+    <div class="testimonio">"Compré el serum y el cambio en mi piel fue inmediato. ¡Lo amo!" <span>- Valentina C.</span></div>
+  </section>
+
+  <section id="contacto" class="suscripcion-section">
+    <h2>Suscríbete para recibir novedades</h2>
+    <form>
+      <input type="email" placeholder="Tu correo electrónico">
+      <button type="submit">Suscribirme</button>
+    </form>
+  </section>
+
+  <section class="social-section">
+    <h2>Síguenos en redes</h2>
+    <p>
+      <a href="#"><i class="fab fa-instagram"></i> Instagram</a> |
+      <a href="#"><i class="fab fa-facebook"></i> Facebook</a> |
+      <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+    </p>
+  </section>
+
+  <a href="https://wa.me/573001112233" class="whatsapp-btn" target="_blank">
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Footer -->
   <footer>
-    &copy; 2025 Aura Glam. Todos los derechos reservados. | Diseñado con 💖 para realzar tu belleza.
+    &copy; 2025 Aura Glam. Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
