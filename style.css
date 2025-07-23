@@ -10,6 +10,12 @@ body {
   color: #333;
   line-height: 1.6;
   padding: 0 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* ========== NAVBAR ========== */
@@ -42,11 +48,24 @@ body {
   text-decoration: none;
   color: #b03e80;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 }
 
 .nav-links a:hover {
   color: #e73399;
+  transform: scale(1.05);
+}
+
+.nav-links details summary {
+  cursor: pointer;
+  color: #b03e80;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links details summary:hover {
+  color: #e73399;
+  transform: scale(1.05);
 }
 
 details ul {
@@ -93,6 +112,7 @@ details ul li {
 /* ========== SECCIONES GENERALES ========== */
 section {
   margin: 50px 0;
+  animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
@@ -119,8 +139,6 @@ h2 {
 }
 
 /* ========== PRODUCTOS ========== */
-/* skincare*/
-
 .search-box {
   display: flex;
   align-items: center;
@@ -141,28 +159,7 @@ h2 {
   font-size: 16px;
   margin-left: 5px;
 }
-/* cabello*/
-.search-box {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 5px 10px;
-  background-color: #fff;
-}
 
-.search-box input {
-  border: none;
-  outline: none;
-  padding: 5px;
-}
-
-.search-box i {
-  color: #b03e80;
-  font-size: 16px;
-  margin-left: 5px;
-}
-/**/
 .productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -176,6 +173,7 @@ h2 {
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .producto:hover {
@@ -235,6 +233,7 @@ h2 {
   max-width: 300px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
 }
 
 .servicio i {
@@ -255,6 +254,7 @@ h2 {
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
 }
 
 /* ========== TESTIMONIOS ========== */
@@ -265,6 +265,7 @@ h2 {
   margin-bottom: 15px;
   border-radius: 8px;
   font-style: italic;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .testimonio span {
