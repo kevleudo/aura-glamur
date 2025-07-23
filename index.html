@@ -18,6 +18,7 @@
       <li><a href="#bienvenida">Inicio</a></li>
       <li><a href="#productos">Productos</a></li>
       <li><a href="#ofertas">Ofertas</a></li>
+      <li><a href="#novedades">Novedades</a></li>
       <li><a href="#blog">Blog</a></li>
       <li><a href="#testimonios">Testimonios</a></li>
       <li><a href="#contacto">Contacto</a></li>
@@ -174,7 +175,8 @@
   <section id="contacto" class="suscripcion-section">
     <h2>Suscríbete para recibir novedades</h2>
     <form>
-      <input type="email" placeholder="Tu correo electrónico">
+      <label for="correo" class="sr-only">Correo electrónico</label>
+      <input type="email" id="correo" placeholder="Tu correo electrónico" required>
       <button type="submit">Suscribirme</button>
     </form>
   </section>
@@ -188,8 +190,9 @@
     </p>
   </section>
 
-  <a href="https://wa.me/573001112233" class="whatsapp-btn" target="_blank">
-    <i class="fab fa-whatsapp"></i>
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/573001112233" class="whatsapp-btn" target="_blank" aria-label="Chatea con nosotros en WhatsApp">
+    <i class="fab fa-whatsapp"></i> 
   </a>
 
   <footer>
