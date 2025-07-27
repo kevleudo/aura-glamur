@@ -27,6 +27,12 @@ body {
   background: linear-gradient(to right, #f6eaf5, #fdeef3);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
+  position:fixed;
+  margin:0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
 }
 
 .logo img {
@@ -216,6 +222,17 @@ h2 {
 
 .producto button:hover {
   background-color: #e73399;
+}
+
+/*Novedades*/
+
+.novedades img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display:block;
+  margin:0 auto;
 }
 
 /* ========== SERVICIOS ========== */
