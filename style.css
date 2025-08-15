@@ -27,11 +27,12 @@ body {
   background: linear-gradient(to right, #f6eaf5, #fdeef3);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
-  position: fixed;
-  margin: 0;
+  position:fixed;
+  margin:0;
   width: 100%;
   top: 0;
   left: 0;
+  
 }
 
 .logo img {
@@ -223,14 +224,15 @@ h2 {
   background-color: #e73399;
 }
 
-/* Novedades */
+/*Novedades*/
+
 .novedades img {
-  width: 30%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
-  display: block;
-  margin: 0 auto;
+  display:block;
+  margin:0 auto;
 }
 
 /* ========== SERVICIOS ========== */
@@ -332,7 +334,7 @@ h2 {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #20b858; /* corregido background-colo */
+  background-color: #20b858;
   color: white;
   font-size: 28px;
   padding: 15px;
@@ -341,10 +343,11 @@ h2 {
   z-index: 1000;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: background 0.3s ease;
+ 
 }
 
 .whatsapp-btn:hover {
-  background-color: #1ca34d;
+  background-color: #20b858;
   text-decoration: none;
 }
 
