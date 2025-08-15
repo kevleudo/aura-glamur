@@ -27,16 +27,17 @@ body {
   background: linear-gradient(to right, #f6eaf5, #fdeef3);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
-  position:fixed;
-  margin:0;
+  position: fixed;
+  margin: 0;
   width: 100%;
   top: 0;
   left: 0;
-  
 }
 
 .logo img {
   height: 60px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -128,13 +129,31 @@ h2 {
   text-align: center;
 }
 
-/* ========== BIENVENIDA ========== */
+/* ========== TAMAÑO UNIFORME DE IMÁGENES ========== */
+img {
+  max-width: 100%;
+  height: 250px; /* Tamaño uniforme */
+  object-fit: cover; /* Recorta sin deformar */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
 .bienvenida-container img {
-  width: 100%;
   height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* ========== BIENVENIDA ========== */
+.bienvenida-container {
+  margin-top: 100px;
 }
 
 .flex-container .item {
@@ -186,13 +205,6 @@ h2 {
   transform: translateY(-5px);
 }
 
-.producto img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
 .producto h3 {
   color: #b03e80;
   font-size: 20px;
@@ -224,15 +236,13 @@ h2 {
   background-color: #e73399;
 }
 
-/*Novedades*/
-
+/* Novedades */
 .novedades img {
   width: 50%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 10px;
-  display:block;
-  margin:0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ========== SERVICIOS ========== */
@@ -328,6 +338,7 @@ h2 {
 .social-section a:hover {
   text-decoration: underline;
 }
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .navbar {
@@ -349,6 +360,8 @@ h2 {
   }
   .search-cart {
     width: 100%;  
+  }
+}
 
 /* ========== FOOTER ========== */
 footer {
