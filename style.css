@@ -225,7 +225,7 @@ h2 {
 
 /* Novedades */
 .novedades img {
-  width: 50%;
+  width: 30%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -355,4 +355,27 @@ footer {
   margin-top: 50px;
   font-size: 14px;
   color: #777;
+}
+/* Tamaño uniforme para todas las imágenes */
+img {
+  max-width: 100%;
+  height: 250px; /* tamaño intermedio */
+  object-fit: cover; /* evita deformación */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ajuste especial para el logo (mantener proporción original) */
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Ajuste especial para la imagen de bienvenida (pantalla completa) */
+.bienvenida-container img {
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
 }
