@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura Glam</title>
-    <!-- Evita espacios en nombres de archivo -->
-    <link rel="icon" href="img/logo aura glam.jpg" type="image/jpeg">
+    <link rel="icon" href="img/logo-aura-glam.jpg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a2e0e6f91b.js" crossorigin="anonymous"></script>
@@ -16,7 +15,7 @@
 
     <header class="navbar">
         <div class="logo">
-            <img src="img/logo aura glam.jpg" alt="Aura Glam Logo">
+            <img src="img/logo-aura-glam.jpg" alt="Logo Aura Glam">
         </div>
         <nav>
             <ul class="nav-links">
@@ -41,130 +40,140 @@
         </nav>
         <div class="search-cart">
             <input type="search" placeholder="Buscar..." aria-label="Buscar">
-            <!-- El icono ya lo añade fontawesome, no uses texto dentro del <i> -->
             <button aria-label="Buscar"><i class="fas fa-search"></i></button>
             <button aria-label="Ver carrito"><i class="fas fa-shopping-cart"></i></button>
         </div>
     </header>
 
-    <section id="bienvenida" class="bienvenida-container">
-        <div class="flex-container">
-            <div class="item">Bienvenidos a Aura Glam - Donde la belleza encuentra su esencia</div>
-            <!-- Añadí muted y playsinline para compatibilidad móvil -->
-            <video src="img/video inicio.mp4" autoplay muted playsinline loop width="100%" class="cambiar"></video>
-        </div>
-    </section>
-
-    <section id="productos" class="container">
-        <h2>Productos Destacados</h2>
-        <div class="productos">
-            <!-- Ejemplo de corrección en alt -->
-            <div class="producto">
-                <img src="img/labiales.jpg" alt="Labial mate en tono rojo">
-                <h3>Labial Mate</h3>
-                <p>Colores intensos y duraderos para un look impactante todo el día.</p>
-                <p class="precio">$18.000 COP</p>
-                <button>Agregar al carrito</button>
+    <main>
+        <section id="bienvenida" class="bienvenida-container">
+            <div class="flex-container">
+                <div class="item">Bienvenidos a Aura Glam - Donde la belleza encuentra su esencia</div>
+                <video src="img/video-inicio.mp4" autoplay muted playsinline loop width="100%" class="cambiar"></video>
             </div>
-            <!-- Resto de productos igual, cuidando descripciones en alt -->
-        </div>
-    </section>
+        </section>
 
-    <section id="ofertas" class="container">
-        <h2>Ofertas Especiales</h2>
-        <div class="productos">
-            <div class="producto">
-                <img src="img/labiales.jpg" alt="Dúo de labiales en tonos cálidos">
-                <h3>Dúo de Labiales</h3>
-                <p>Dos tonos intensos al precio de uno. ¡Solo por tiempo limitado!</p>
-                <p class="precio">$22.000 COP</p>
-                <button>Agregar al carrito</button>
+        <section id="productos" class="container">
+            <h2>Productos Destacados</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/labiales.jpg" alt="Labial mate en tono rojo">
+                    <h3>Labial Mate</h3>
+                    <p>Colores intensos y duraderos para un look impactante todo el día.</p>
+                    <p class="precio">$18.000 COP</p>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
-            <div class="producto">
-                <img src="img/kit-skincare-diario.jpg" alt="Kit de skincare diario">
-                <h3>Kit Skincare Diario</h3>
-                <p>Limpieza, hidratación y protección en un solo paquete.</p>
-                <p class="precio">$55.000 COP</p>
-                <button>Agregar al carrito</button>
+        </section>
+
+        <section id="ofertas" class="container">
+            <h2>Ofertas Especiales</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/labiales.jpg" alt="Dúo de labiales en tonos cálidos">
+                    <h3>Dúo de Labiales</h3>
+                    <p>Dos tonos intensos al precio de uno. ¡Solo por tiempo limitado!</p>
+                    <p class="precio">$22.000 COP</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="img/kit-skincare-diario.jpg" alt="Kit de skincare diario">
+                    <h3>Kit Skincare Diario</h3>
+                    <p>Limpieza, hidratación y protección en un solo paquete.</p>
+                    <p class="precio">$55.000 COP</p>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="novedades" class="container">
-        <h2>Novedades Recientes</h2>
-        <div class="productos">
-            <div class="novedades">
-                <img src="img/paleta-glam-edicion-limitada.jpg" alt="Paleta de sombras edición limitada">
-                <h3>Paleta Glam Edición Limitada</h3>
-                <p>Colores exclusivos para esta temporada. ¡No te la pierdas!</p>
-                <p class="precio">$48.000 COP</p>
-                <button>Agregar al carrito</button>
+        <section id="novedades" class="container">
+            <h2>Novedades Recientes</h2>
+            <div class="productos">
+                <div class="novedades">
+                    <img src="img/paleta-glam-edicion-limitada.jpg" alt="Paleta de sombras edición limitada">
+                    <h3>Paleta Glam Edición Limitada</h3>
+                    <p>Colores exclusivos para esta temporada. ¡No te la pierdas!</p>
+                    <p class="precio">$48.000 COP</p>
+                    <button>Agregar al carrito</button>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="servicios" class="container">
-        <h2>Servicios de Belleza</h2>
-        <div class="servicios">
-            <div class="servicio">
-                <i class="fas fa-air-freshener"></i>
-                <h3>Asesoría Personalizada</h3>
-                <p>Te ayudamos a elegir los productos ideales para tu tipo de piel y estilo.</p>
+        <section id="servicios" class="container">
+            <h2>Servicios de Belleza</h2>
+            <div class="servicios">
+                <div class="servicio">
+                    <i class="fas fa-air-freshener"></i>
+                    <h3>Asesoría Personalizada</h3>
+                    <p>Te ayudamos a elegir los productos ideales para tu tipo de piel y estilo.</p>
+                </div>
+                <div class="servicio">
+                    <i class="fas fa-magic"></i>
+                    <h3>Maquillaje Profesional</h3>
+                    <p>Agenda tu cita para eventos especiales con nuestros maquilladores expertos.</p>
+                </div>
             </div>
-            <div class="servicio">
-                <i class="fas fa-magic"></i>
-                <h3>Maquillaje Profesional</h3>
-                <p>Agenda tu cita para eventos especiales con nuestros maquilladores expertos.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="blog" class="blog-section">
-        <h2>Blog de Belleza</h2>
-        <!-- Podrías usar <article> para SEO -->
-        <article class="blog-entrada">
-            <h3>5 pasos para un maquillaje natural</h3>
-            <p>Descubre cómo lograr un look fresco y radiante en menos de 10 minutos.</p>
-        </article>
-        <article class="blog-entrada">
-            <h3>Rutina de skincare para piel mixta</h3>
-            <p>Guía completa para cuidar y equilibrar tu piel día a día.</p>
-        </article>
-        <article class="blog-entrada">
-            <h3>Errores comunes al lavar tu cabello</h3>
-            <p>Evita estos hábitos y mejora la salud de tu melena.</p>
-        </article>
-        <article class="blog-entrada">
-            <h3>Trucos para que tu labial dure más</h3>
-            <p>Desde exfoliar hasta sellar, conoce los secretos para labios perfectos todo el día.</p>
-        </article>
-    </section>
+        <section id="blog" class="blog-section">
+            <h2>Blog de Belleza</h2>
+            <article class="blog-entrada">
+                <h3>5 pasos para un maquillaje natural</h3>
+                <p>Descubre cómo lograr un look fresco y radiante en menos de 10 minutos.</p>
+            </article>
+            <article class="blog-entrada">
+                <h3>Rutina de skincare para piel mixta</h3>
+                <p>Guía completa para cuidar y equilibrar tu piel día a día.</p>
+            </article>
+            <article class="blog-entrada">
+                <h3>Errores comunes al lavar tu cabello</h3>
+                <p>Evita estos hábitos y mejora la salud de tu melena.</p>
+            </article>
+            <article class="blog-entrada">
+                <h3>Trucos para que tu labial dure más</h3>
+                <p>Desde exfoliar hasta sellar, conoce los secretos para labios perfectos todo el día.</p>
+            </article>
+        </section>
 
-    <section id="testimonios" class="testimonios-section">
-        <h2>Lo que dicen nuestras clientas</h2>
-        <blockquote class="testimonio">"Los productos son increíbles! Mi piel nunca se sintió tan suave y luminosa." <cite>- Camila R.</cite></blockquote>
-        <blockquote class="testimonio">"Recomiendo Aura Glam a todas mis amigas. ¡Servicio rápido y productos de calidad!" <cite>- Laura M.</cite></blockquote>
-        <blockquote class="testimonio">"La paleta de sombras me encantó. Colores intensos que duran todo el día." <cite>- Daniela G.</cite></blockquote>
-        <blockquote class="testimonio">"Compré el serum y el cambio en mi piel fue inmediato. ¡Lo amo!" <cite>- Valentina C.</cite></blockquote>
-    </section>
+        <section id="testimonios" class="testimonios-section">
+            <h2>Lo que dicen nuestras clientas</h2>
+            <blockquote class="testimonio">
+                "Los productos son increíbles! Mi piel nunca se sintió tan suave y luminosa."
+                <cite>- Camila R.</cite>
+            </blockquote>
+            <blockquote class="testimonio">
+                "Recomiendo Aura Glam a todas mis amigas. ¡Servicio rápido y productos de calidad!"
+                <cite>- Laura M.</cite>
+            </blockquote>
+            <blockquote class="testimonio">
+                "La paleta de sombras me encantó. Colores intensos que duran todo el día."
+                <cite>- Daniela G.</cite>
+            </blockquote>
+            <blockquote class="testimonio">
+                "Compré el serum y el cambio en mi piel fue inmediato. ¡Lo amo!"
+                <cite>- Valentina C.</cite>
+            </blockquote>
+        </section>
 
-    <section id="contacto" class="suscripcion-section">
-        <h2>Suscríbete para recibir novedades</h2>
-        <form>
-            <label for="correo" class="sr-only">Correo electrónico</label>
-            <input type="email" id="correo" placeholder="Tu correo electrónico" required>
-            <button type="submit">Suscribirme</button>
-        </form>
-    </section>
+        <section id="contacto" class="suscripcion-section">
+            <h2>Suscríbete para recibir novedades</h2>
+            <form>
+                <label for="correo" class="sr-only">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </section>
 
-    <section class="social-section">
-        <h2>Síguenos en redes</h2>
-        <p>
-            <a href="#" aria-label="Instagram de Aura Glam"><i class="fab fa-instagram"></i> Instagram</a> |
-            <a href="#" aria-label="Facebook de Aura Glam"><i class="fab fa-facebook"></i> Facebook</a> |
-            <a href="#" aria-label="TikTok de Aura Glam"><i class="fab fa-tiktok"></i> TikTok</a>
-        </p>
-    </section>
+        <section class="social-section">
+            <h2>Síguenos en redes</h2>
+            <p>
+                <a href="#" aria-label="Instagram de Aura Glam"><i class="fab fa-instagram"></i> Instagram</a> |
+                <a href="#" aria-label="Facebook de Aura Glam"><i class="fab fa-facebook"></i> Facebook</a> |
+                <a href="#" aria-label="TikTok de Aura Glam"><i class="fab fa-tiktok"></i> TikTok</a>
+            </p>
+        </section>
+    </main>
+
     <footer>
         &copy; 2025 Aura Glam. Todos los derechos reservados.
     </footer>

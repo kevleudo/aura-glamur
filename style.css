@@ -371,3 +371,53 @@ footer {
   font-size: 14px;
   color: #777;
 }
+/* ========== REDES SOCIALES ========== */
+.social-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.social-section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #b03e80;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.social-section p {
+  font-size: 16px;
+}
+
+.social-section a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #b03e80;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.social-section a i {
+  font-size: 24px;
+}
+
+.social-section a:hover {
+  color: #e73399;
+  transform: translateY(-3px) scale(1.1);
+}
+
+.social-section a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #e73399;
+  transition: width 0.3s;
+  margin-top: 3px;
+}
+
+.social-section a:hover::after {
+  width: 100%;
+}
